@@ -1,0 +1,1 @@
+I believe that the code sets number to 12 and i to 2. As long as i is less that 12, the code add 1 to i until it is greater than 12. ALso everytime i is less than number, if number % i is 0, the code prints i.
