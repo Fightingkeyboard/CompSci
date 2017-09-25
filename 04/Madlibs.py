@@ -1,13 +1,13 @@
 #Anthony % Anton Madlibs
 
-story = 'The ADJ NOUN was VERB because the NOUN did not like the ADJ NOUN VERB at NOUN'
-nouns = ['dude', 'man', 'kid']
+story = 'NAME was VERB because NAME did not like the NAME VERB at NOUN. So NAME went to NOUN, but NOUN was not a place for VERB. The end.'
+names = ['dude', 'man', 'kid']
 verbs = ['fighting', 'racing', 'running']
-adj = ['blue', 'happy', 'sad']
+nouns = ['Hardware Store', 'School', 'Heliport']
 
 import random as rand
-s = ['NOUN', 'VERB', 'ADJ']
-l = [nouns, verbs, adj]
+s = ['NOUN', 'VERB', 'NAME']
+l = [nouns, verbs, names]
 for x in range(len(s)):
     while story.find(s[x]) != -1:
         rand.shuffle(l[x])
