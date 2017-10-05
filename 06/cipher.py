@@ -43,7 +43,7 @@ def build_frequency_vector(s):
         v.append(s.count(i) / num_letters)
     return v
 
-def derotate(s):
+def decode(s):
     smallest_distance = distance(build_frequency_vector(rotate_string(s,25)), real_freq)
     smallest_distance_rotations = 25
     for x in range(26):
@@ -57,4 +57,4 @@ def derotate(s):
 
 test_string = 'This is a test, I will rotate the test string 20 steps and attempt to decode it with my program. Punctuation also seems functional!'
 test = rotate_string(test_string, 20)
-print (derotate(test))
+print (decode(test))
