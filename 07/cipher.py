@@ -59,6 +59,6 @@ def decode(s):
             smallest_distance_rotations = x
     return rotate_string(s, smallest_distance_rotations)
 
-test_string = 'This is a test, I will rotate the test string 20 steps and attempt to decode it with my program. Punctuation also seems functional!'
+test_string = 'This is a test of my awesome program to decode a rotated string. It works by taking the frequency of letter of text.txt and using it to see how many times this string needs to be rotated.'
 test = rotate_string(test_string, 20)
 print (decode(test))
