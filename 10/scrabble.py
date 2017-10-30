@@ -74,6 +74,8 @@ def add_word_across(board,word,r,c):
         total = total*(3**T)
     if D != 0:
         total = total*(2**D)
+    if len(word) == 7:
+        total += 50
     return total
 
 def add_word_down(board,word,r,c):
@@ -100,6 +102,8 @@ def add_word_down(board,word,r,c):
         total = total*(3**T)
     if D != 0:
         total = total*(2**D)
+    if len(word) == 7:
+        total += 50
     return total
     
 print(print_board(board))
