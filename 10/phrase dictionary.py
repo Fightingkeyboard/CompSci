@@ -19,3 +19,15 @@ def buildwordphrasedictionary(text):
         pd.setdefault(l[i],list())
         pd[l[i]].append(l[i+1])
     return pd
+
+def bwpdhuman(text):
+    d = buildwordphrasedictionary(text)
+    k = list(d.keys())
+    v = list(d.values())
+    for i in range(len(k)):
+        r = print(k[i], ':', v[i])
+    return r
+
+bwpdhuman('hamlet.txt')
+bwpdhuman('sonnets.txt')
+bwpdhuman('psalms.txt')
