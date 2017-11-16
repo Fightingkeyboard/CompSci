@@ -19,7 +19,7 @@ def CsvDict(filename):
 	for line in csv_dict_reader:
 		l.append(line)
 	f.close()
-	return l[:-1]
+	return l
 
 def WhoSaidWhatDict(dict):
 	result = {}
@@ -46,4 +46,4 @@ print (str(WhoSaidThat('thanks')))
 print ('TDCJ Numbers of people who said bamboozle')
 print (str(WhoSaidThat('bamboozle')))
 print ('TDCJ Numbers of people who said Jesus')
-print (str(WhoSaidThat('Jesus')))
+print (str(WhoSaidThat('Jesus'))
