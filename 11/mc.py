@@ -2,7 +2,6 @@ import random
 
 def buildwordlist(text):
     l = []
-    d = {}
     for w in text.split():
         w = w.lower()
         word = ''
